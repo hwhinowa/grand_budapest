@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import 'E:/Desktop/codes/budapest/css/reset.css';
+@import './reset.css';
 
 html{
     font-size:10px;
