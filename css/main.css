@@ -29,6 +29,10 @@ body,
 .wrap.active{
     overflow:initial;
     width:max-content;
+    width:-moz-max-content;
+    width:-webkit-max-content;
+    width:-o-max-content;
+    width:-ms-max-content;
 }
 .wrap > div{
     float:left;
@@ -209,7 +213,7 @@ header.active ul{bottom:4.5rem;}
 .slide_box .slide .slide_page{
     position: relative;
     top:50%;
-    right:2rem;
+    right:5rem;
     width:100%;
     padding-left:10rem;
     z-index:1;

@@ -49,6 +49,16 @@ const horizontal_scroll = function (event) {
     return false;
 };
 document.body.addEventListener('mousewheel', horizontal_scroll);
+document.body.addEventListener('scroll', function(){
+	let nav = $('header');
+	
+	if(document.body.scrollLeft > 700){
+		nav.classList.add('active');
+	}else{
+		nav.classList.remove('active');
+	}
+    return false;
+});
 
 const go_to=(target)=>{
 	let num, stick = true, nav = $('header');
