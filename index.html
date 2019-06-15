@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Grand Budapest Hotel</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link rel='icon' type='image/png' href='E:/Desktop/codes/budapest/img/favicon.png'>
+    <link rel='stylesheet' href='E:/Desktop/codes/budapest/css/main.css'>
+</head>
+
+<body>
+    <div class='wrap clear' id='wrap'>
+        <!-- LOADING VIDEO -->
+        <div class='video_box'>
+            <video id='intro' autoplay muted>
+                <source src='E:/Desktop/codes/budapest/video/clip.mp4' type='video/mp4'>
+            </video>
+        </div>
+        <!-- TITLE -->
+        <div class="welcome_box">
+            <span>
+                <img src='E:/Desktop/codes/budapest/img/budapest2.jpg' alt="">
+            </span>
+            <span class="logo">
+                The Grand Budapest Hotel
+            </span>
+        </div>
+        <!-- MENU -->
+        <header>
+            <a href="" class='clear'>
+                <img src="E:/Desktop/codes/budapest/img/logo.png" alt="">
+            </a>
+            <ul>
+                <li><button onclick='go_to("Staff")'>Staff</button></li>
+                <li><button onclick='go_to("Info")'>Hotel Info</button></li>
+                <li><button onclick='go_to("Welcome")'>Welcome</button></li>
+            </ul>
+        </header>
+        <!-- STORY -->
+        <div class="story_box" id='info'>
+            <p>
+                세계 최고 부호 마담 D.의 피살사건<br>전 세계를 매료시킨 황홀한 이야기가 다시 시작된다<br>1927년 세계대전이 한창이던 어느 날, 세계 최고의 부호 마담 D.가 의문의 살인을 당한다. 유력한 용의자로 지목된 사람은 바로 전설적인 호텔 지배인이자 그녀의 연인 ‘구스타브’!<br>구스타브는 누명을 벗기 위해 충실한 로비보이 ‘제로’에게 도움을 청하고, 그 사이 구스타브에게 남겨진 마담 D.의 유산을 노리던 그녀의 아들 ‘드미트리’는 무자비한 킬러를 고용해 [그랜드 부다페스트 호텔]을 찾게 되는데…
+            </p>
+            <div class="famous_line">
+                <span>Rudeness is</span>
+                <span>the expression</span>
+                <span>of fear</span>
+            </div>
+        </div>
+        <!-- IMAGE SLIDER -->
+        <div class="slide_box">
+            <ul>
+                <li class="slide">
+                    <div class="slide_page">
+                        <p>
+                            <span class="slide_num">1</span><span class="slide_total"></span>
+                        </p>
+                    </div>
+                    <div class="slide_img img1"></div>
+                    <div class="slide_img_small img1"></div>
+                </li>
+                <li class="slide">
+                    <div class="slide_page">
+                        <p>
+                            <span class="slide_num">2</span>
+                        </p>
+                    </div>
+                    <div class="slide_img img2"></div>
+                    <div class="slide_img_small img2"></div>
+                </li>
+                <li class="slide">
+                    <div class="slide_page">
+                        <p>
+                            <span class="slide_num">3</span>
+                        </p>
+                    </div>
+                    <div class="slide_img img3"></div>
+                    <div class="slide_img_small img3"></div>
+                </li>
+                <li class="slide">
+                    <div class="slide_page">
+                        <p>
+                            <span class="slide_num">4</span>
+                        </p>
+                    </div>
+                    <div class="slide_img img4"></div>
+                    <div class="slide_img_small img4"></div>
+                </li>
+                <li class="slide">
+                    <div class="slide_page">
+                        <p>
+                            <span class="slide_num">5</span>
+                        </p>
+                    </div>
+                    <div class="slide_img img5"></div>
+                    <div class="slide_img_small img5"></div>
+                </li>
+            </ul>
+            <div class="slide_nav">
+                <button class="prev" data-value="prev">이전</button>
+                <button class="next">다음</button>
+            </div>
+        </div>
+        <!-- SYNOPSIS -->
+        <div class="synopsis_box">
+            <p class='story'>
+                알프스 산맥에 위치한 가상의 국가 ‘주브로브카(Zubrowka)’의 온천관광 도시에 위치하고 전 세계가 동경하는 &lt;그랜드 부다페스트 호텔&gt;은 현재가 아닌, 1930년대부터 80년대까지 유럽의 모습을 담고 있다. 때문에 영화 속 인물들을 비롯해 또 다른 주인공인 ‘그랜드 부다페스트 호텔’은 시간의 흐름에 따라 외관과 함께 내면도 변화를 겪는다.<br>&lt;그랜드 부다페스트 호텔&gt;의 중심 사건인 마담 D. 피살사건은 1차 세계대전과 2차 세계대전 사이에 벌어지게 된다. 그 전까지만 해도 호화스러운 전성기를 누리던 호텔과 주브로브카의 주민들, 그리고 그 평온하고 예술을 사랑하던 시대 자체는 종결되고 만다. 이윽고 전 유럽을 뒤덮은 끔찍한 대학살 사건과 전쟁들이 발발하게 되고 계속되는 나치즘, 파시즘의 도래는 영화 속에서 구스타브-제로와 드미트리-조플링의 맞대결과 국경에서 신분수색을 하는 헌병대의 등장으로 묘사 되는 기상천외하고 미스터리한 모험담 이면에 숨겨진 유럽의 어두운 과거를 설명해준다. 이러한 혼란의 시대가 지나고, 모든 것이 쇠퇴해가는 지점에 선 ‘그랜드 부다페스트 호텔’과 평화로웠던 ‘주브로브카 공화국’은 과거의 영광을 뒤로한 채 관객들 앞에 빛 바래고 텅 빈 모습으로 다시 나타난다
+            </p>
+            <p>
+                <span>[PRODUCTION NOTE 1]</span>
+                오래된 백화점이 모두가 동경하는 [그랜드 부다페스트 호텔]로 재탄생<br>동계올림픽보다 더 짜릿한 스키 추격신! 알고 보니 미니어처?<br>실제 그 이상의 공간, 스크린 위에 완벽하게 창조해내다
+            </p>
+            <p>
+                <span>[PRODUCTION NOTE 2]</span>
+                1930~80년대 유럽으로의 환상적인 시간여행! 세계대전부터 종전 그 후의 불안한 유럽의 초상까지<br>전설적인 작가 슈테판 츠바이크에게 영감을 얻다
+            </p>
+        </div>
+        <!-- CHARACTER -->
+        <div class="actor_box" id='staff'>
+            <div class="character">
+                <div class="name">
+                    <p>M.Gustave<span></span>M.Gustave<span></span></p>
+                </div>
+                <div class="character_img img1"></div>
+            </div>
+            <div class="character">
+                <div class="name">
+                    <p>Zero Moustafa<span></span>Zero Moustafa<span></span></p>
+                </div>
+                <div class="character_img img2"></div>
+            </div>
+            <div class="character">
+                <div class="name">
+                    <p>Agatha<span></span>Agatha<span></span></p>
+                </div>
+                <div class="character_img img3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src='E:/Desktop/codes/budapest/js/main.js'></script>
+</body>
+
+</html>
