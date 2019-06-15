@@ -37,9 +37,9 @@ const horizontal_scroll = function (event) {
 	if (document.body.doScroll){
         document.body.doScroll(event.wheelDelta > 0 ? 'left' : 'right');
     }else if ((event.wheelDelta || event.detail) > 0){
-        document.body.scrollLeft -= 100;
+        document.body.scrollLeft -= 150;
     }else{
-        document.body.scrollLeft += 100;
+        document.body.scrollLeft += 150;
 	}
 	if(document.body.scrollLeft > 700){
 		nav.classList.add('active');
@@ -51,7 +51,7 @@ const horizontal_scroll = function (event) {
 document.body.addEventListener('mousewheel', horizontal_scroll);
 document.body.addEventListener('scroll', function(){
 	let nav = $('header');
-	
+
 	if(document.body.scrollLeft > 700){
 		nav.classList.add('active');
 	}else{
@@ -59,6 +59,16 @@ document.body.addEventListener('scroll', function(){
 	}
     return false;
 });
+document.body.addEventListener('touchend', function(){
+	let nav = $('header');
+
+	if(document.body.scrollLeft > 700){
+		nav.classList.add('active');
+	}else{
+		nav.classList.remove('active');
+	}
+    return false;
+})
 
 const go_to=(target)=>{
 	let num, stick = true, nav = $('header');

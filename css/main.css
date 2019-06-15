@@ -10,6 +10,14 @@ html, body{
     overflow-y:hidden;
     height:100%;
 }
+body{
+    -moz-transition-property:-webkit-scrolling;
+    -moz-transition-duration:0.5s;
+    -moz-transition-delay:0.1s;
+    -webkit-transition-property:-webkit-scrolling;
+    -webkit-transition-duration:0.5s;
+    -webkit-transition-delay:0.1s;
+}
 body::-webkit-scrollbar,
 .about_container::-webkit-scrollbar{display: none;}
 body,
@@ -37,6 +45,31 @@ body,
 .wrap > div{
     float:left;
     height:100%;
+}
+
+.get_out{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:20vh 5rem 0;
+    box-sizing:border-box;
+    background:#17d789;
+    z-index:99999;
+}
+.get_out.active{
+    display:block;
+}
+.get_out p{
+    height:100%;
+    font-size:5rem;
+    font-weight:900;
+    color:rgba(0, 255, 174, 1);
+    text-align:center;
+    line-height:120%;
+    letter-spacing:-1px;
 }
 
 /* LOADING VIDEO */
@@ -201,7 +234,7 @@ header.active ul{bottom:4.5rem;}
     overflow:hidden;
     width:75rem;
     height:100vh;
-    margin:0 2rem;
+    margin:0 2rem 0 10rem;
 }
 .slide_box .slide{
     position: absolute;
